@@ -8,8 +8,6 @@
     "test": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:record": "cypress run --record --key"
-    "test:chrome": "cypress run --browser chrome",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
     "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
