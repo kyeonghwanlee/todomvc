@@ -62,8 +62,6 @@ describe('empty spec', () => {
     cy.get('[style="margin-top: 19px;"] > .lk-checkbox > .checkmark').click()
 
     cy.get('.lk-button').click()
-    
-    cy.get('.error-message').should('exist') 
   })
 /*
   it('2-6. createaccount ', () => {
