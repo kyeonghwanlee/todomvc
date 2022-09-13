@@ -8,9 +8,7 @@
     "test": "cypress run",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:record": "cypress run --record --key",
-    "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "cypress:record": "cypress run --record --key"
   },
   "dependencies": {
     "todomvc-app-css": "2.3.0",
