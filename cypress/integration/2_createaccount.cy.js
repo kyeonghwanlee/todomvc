@@ -65,7 +65,7 @@ describe('empty spec', () => {
     
     cy.get('.error-message').should('exist') 
   })
-
+/*
   it('2-6. createaccount ', () => {
     cy.get('#id').type('pogap61665@otodir.com')
     cy.get(':nth-child(5) > .lk-input > .lk-input-inner > input').type('@dl29240730')
@@ -83,5 +83,5 @@ describe('empty spec', () => {
       cy.log('The current real URL id: ', valse)
     })
   })
-
+*/
 })
