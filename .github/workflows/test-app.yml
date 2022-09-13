@@ -20,7 +20,8 @@ jobs:
                   npm install mochawesome-merge --save-dev
                   npm install mochawesome-report-generator --save-dev
                   npm run build
-          start: npm test
+          start: npm start 
+          post: npm run posttest
                   
       - name: cypress-report
         # You may pin to the exact commit or the version.
