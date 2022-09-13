@@ -21,7 +21,6 @@ jobs:
         uses: duynhanf/cypress-report@v2
         with: # number of milliseconds to wait
           milliseconds: 1000
-          pathname: ./
       - name: Cypress report action
   # You may pin to the exact commit or the version.
   # uses: dmitry/cypress-report-action@739a256a823e7b6c79837673c124a655fe49a3e8
@@ -29,8 +28,6 @@ jobs:
         with:
     # Github token
          token: ${{ secrets.GITHUB_TOKEN }}
-    # Full pathname to the mochawesome report JSON file
-         pathname: ./
     # Title in the comment
          title: Cypress report
     # Should it be shown always or it should be deleted when there are no failures
