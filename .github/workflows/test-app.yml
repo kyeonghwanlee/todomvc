@@ -14,7 +14,14 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
-          start: npm start
+          start: |
+                  npm install mocha --save-dev
+                  npm install cypress-multi-reporters --save-dev
+                  npm install mochawesome --save-dev
+                  npm install mochawesome-merge --save-dev
+                  npm install mochawesome-report-generator --save-dev
+                  npm start
+                  
       - name: cypress-report
         # You may pin to the exact commit or the version.
         # uses: duynhanf/cypress-report@ce6bbdbf56f81503520be662de82e84f8901cda4
