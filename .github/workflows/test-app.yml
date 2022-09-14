@@ -26,7 +26,7 @@ jobs:
         with:
           report: npm run report:merge
 
-      - name: Cypress report2
+      - name: Cypress report2 
         with:
           report2: npm run report:generate
                   
