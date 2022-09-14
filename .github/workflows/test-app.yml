@@ -23,12 +23,10 @@ jobs:
           start: npm start 
 
       - name: Cypress report
-        uses: cypress-io/github-action@v2
         with:
           report: npm run report:merge
 
       - name: Cypress report2
-        uses: cypress-io/github-action@v2
         with:
           report2: npm run report:generate
                   
