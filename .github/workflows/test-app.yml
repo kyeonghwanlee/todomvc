@@ -23,11 +23,13 @@ jobs:
           start: npm start 
 
       - name: Cypress report
+        uses: duynhanf/cypress-report@v2
         with:
           report: npm run report:merge
 
       - name: Cypress report2 
-        with:
+        uses: dmitry/cypress-report-action@1.0.0
+        with: 
           report2: npm run report:generate
                   
       - name: cypress-report
