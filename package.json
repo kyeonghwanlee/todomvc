@@ -14,7 +14,7 @@
     "scripts": "cypress run",
     "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
     "report:generate": "marge index.json --reportDir cypress/public --assetsDir public/assets --reportPageTitle index.html"
-    "test:mochawesome": "npm test && npm run merge:reports && npm run generate:report"
+    "test:mochawesome": "npm run merge:reports && npm run generate:report"
   },
   "dependencies": {
     "todomvc-app-css": "2.3.0",
