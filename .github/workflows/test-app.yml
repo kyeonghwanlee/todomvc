@@ -22,7 +22,7 @@ jobs:
                   npm run build
           start: npm start 
           post: npm run report:merge
-          report : npm run report:generate
+          report: npm run report:generate
                   
       - name: cypress-report
         # You may pin to the exact commit or the version.
